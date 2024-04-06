@@ -5,17 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b4c110c-8dc2-4bbd-8df3-b5e9cb250e7a" name="更改" comment="新建文件夹">
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/components/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/components/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/components/Top.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/vite.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,6 +105,7 @@
       <workItem from="1712372695215" duration="7000" />
       <workItem from="1712373237810" duration="1211000" />
       <workItem from="1712388575320" duration="12626000" />
+      <workItem from="1712401409425" duration="697000" />
     </task>
     <task id="LOCAL-00001" summary="新建文件夹">
       <option name="closed" value="true" />
@@ -133,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712309030245</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新建文件夹">
+      <option name="closed" value="true" />
+      <created>1712401487980</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712401487980</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
