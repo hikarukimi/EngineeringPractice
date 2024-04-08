@@ -1,16 +1,19 @@
 <script setup>
-  import {reactive} from "vue";
-  import {loginOrRegister} from "../assets/CommonJs/LoginOrRegisterCommonJs.js";
-  let student = reactive({
-    username: '',
-    password: ''
-  })
-   function login(student){loginOrRegister(student,'studentLogin')}
+import {reactive} from "vue";
+import {loginOrRegister} from "../assets/CommonJs/LoginOrRegisterCommonJs.js";
+
+let student = reactive({
+  username: '',
+  password: ''
+})
+function register(student){
+  loginOrRegister(student,'studentRegister')
+}
 </script>
 
 <template>
-  <el-form class="el-form" label-width="auto" @submit.prevent="login(student)">
-    <el-form-item style="margin-left: 60px"><h1>用户登录</h1></el-form-item>
+  <el-form class="el-form" label-width="auto" @submit.prevent="register(student)">
+    <el-form-item style="margin-left: 60px"><h1>用户注册</h1></el-form-item>
     <el-form-item  label="用户名" >
       <el-input v-model=student.username placeholder="请输入用户名" ></el-input>
     </el-form-item>
@@ -28,8 +31,8 @@
 </template>
 
 <style scoped>
-  .el-form {
-    width: 200px;
-    margin: auto;
-  }
+.el-form {
+  width: 200px;
+  margin: auto;
+}
 </style>

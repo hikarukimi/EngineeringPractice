@@ -8,8 +8,8 @@
       <h1 class="title" style="color: chocolate">傻逼选课系统</h1>
       <div class="left">
         <router-link to="/"><el-link :underline="false">主页</el-link></router-link>
-        <p>选课系统</p>
-        <p>巴拉巴拉小魔仙</p>
+        <router-link to="/classes"><el-link :underline="false">选课系统</el-link></router-link>
+        <router-link to="/myMessage"><el-link :underline="false">个人中心</el-link></router-link>
       </div>
       <div class="center"></div>
       <div class="right"></div>

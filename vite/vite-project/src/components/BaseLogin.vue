@@ -1,11 +1,5 @@
 <script setup>
-  import {reactive} from "vue";
-  import {loginOrRegister} from "../assets/CommonJs/LoginOrRegisterCommonJs.js";
-  let student = reactive({
-    username: '',
-    password: ''
-  })
-   function login(student){loginOrRegister(student,'studentLogin')}
+
 </script>
 
 <template>
@@ -28,8 +22,5 @@
 </template>
 
 <style scoped>
-  .el-form {
-    width: 200px;
-    margin: auto;
-  }
+
 </style>

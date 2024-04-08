@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="App.mappers.StudentMapper">
+    <select id="StudentList" resultMap="student">
+        select student.sid,school.schoolName,student.name,student.qq from student,school where school.schoolId=student.schoolId
+    </select>
+    <resultMap id="student" type="App.pojo.Student">
+        <id column="sid" property="sid"></id>
+        <result column="name" property="name"></result>
+        <result column="qq" property="qq"></result>
+        <association property="school" javaType="App.pojo.School">
+            <id column="schoolId" property="schoolId"></id>
+            <result column="schoolName" property="schoolName"></result>
+        </association>
+    </resultMap>
+</mapper>

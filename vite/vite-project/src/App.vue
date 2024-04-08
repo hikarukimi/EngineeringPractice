@@ -4,14 +4,17 @@
 import Top from "./components/Top.vue";
 
 
+
+
 </script>
 
 <template>
 
-
+  <Test></Test>
     <Top></Top>
     <div class="apart"></div>
     <router-view></router-view>
+
 
 
 
