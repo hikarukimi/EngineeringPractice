@@ -1,14 +1,19 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import App from './App.vue'
 import {createRouter, createWebHistory} from "vue-router";
 import Home from "./components/Home.vue";
 import Login from "./components/Login.vue";
-import Classes from "./components/Classes.vue";
-import Register from "./components/Register.vue"
+import ClassesForStudent from "./components/Student/ClassesForStudent.vue";
+import ClassesForAdmin from "./components/Admin/ClassesForAdmin.vue";
+import Register from "./components/Register.vue";
 import ForgetPassword from "./components/ForgetPassword.vue";
-import MyMessage from "./components/MyMessage.vue";
+import MyMessageForStudent from "./components/Student/MyMessageForStudent.vue";
+import MyMessageForAdmin from "./components/Admin/MyMessageForAdmin.vue";
+import insertCourse from "./components/CourseUtilComponent/insertCourse.vue";
+import updateCourse from "./components/CourseUtilComponent/updateCourse.vue"
+
 
 
 const app = createApp(App)
@@ -20,18 +25,31 @@ const routes = [
     {
         path: '/login',
         component: Login
-    },{
-        path: '/classes',
-        component: Classes
-    },{
-        path:'/register',
+    }, {
+        path: '/classesForStudent',
+        component: ClassesForStudent
+    }, {
+        path: '/classesForAdmin',
+        component: ClassesForAdmin,
+    },
+    {
+        path: '/register',
         component: Register
-    },{
+    }, {
         path: '/forgetPassword',
         component: ForgetPassword
+    }, {
+        path: '/myMessageForStudent',
+        component: MyMessageForStudent
+    }, {
+        path: '/myMessageForAdmin',
+        component: MyMessageForAdmin
     },{
-        path:'/myMessage',
-        component: MyMessage
+        path:'/classesForAdmin/insertCourse',
+        component: insertCourse
+    },{
+        path:'/classesForAdmin/updateCourse',
+        component: updateCourse
     }
 ];
 

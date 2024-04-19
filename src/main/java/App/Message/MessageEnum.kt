@@ -1,7 +1,7 @@
-package App
+package App.Message
 
 /**
- * @Description 用来描述后端返回信息的类
+ * @Description 用来描述后端返回信息的枚举
  * @Author hikarukimi
  */
 enum class MessageEnum {
@@ -13,5 +13,5 @@ enum class MessageEnum {
     USER_REGISTER_SUCCESS,
     USER_LOGIN_SUCCESS,
     USERNAME_OR_PASSWORD_ERROR,
-    USER_NOT_EXISTS
+    SELECT_COURSE_SUCCESS
 }

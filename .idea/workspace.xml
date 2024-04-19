@@ -4,21 +4,66 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b4c110c-8dc2-4bbd-8df3-b5e9cb250e7a" name="更改" comment="新建文件夹">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/App/MessageEnum.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/App/pojo/Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/assets/CommonJs/LoginOrRegisterCommonJs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/components/BaseLogin.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/components/Classes.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/components/ForgetPassword.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/components/MyMessage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/components/Register.vue" afterDir="false" />
+    <list default="true" id="4b4c110c-8dc2-4bbd-8df3-b5e9cb250e7a" name="更改" comment="完成了部分功能">
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/Action/AdminAction.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/Action/CourseAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/Action/CourseStudentAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/Action/SchoolAction.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/Message/CourseMessage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/Message/MessageBuilder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/Request/AdminRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/Request/CourseRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/Request/StudentRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/mappers/AdminMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/mappers/CourseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/mappers/CourseStudentMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/mappers/SchoolMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/pojo/Admin.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/pojo/Course.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App/pojo/CourseStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/CourseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/assets/CommonJs/animation/MouseMoveColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/assets/CommonJs/check/LoginOrRegisterCheckParam.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/assets/CommonJs/utils/AdminUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/assets/CommonJs/utils/BaseUtil/FetchUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/assets/CommonJs/utils/BaseUtil/ObjectArrayUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/assets/CommonJs/utils/CourseUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/assets/CommonJs/utils/SchoolUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/assets/CommonJs/utils/StudentUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/components/Admin/ClassesForAdmin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/components/Admin/MyMessageForAdmin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/components/CourseUtilComponent/insertCourse.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/components/Student/ClassesForStudent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/vite-project/src/components/Student/MyMessageForStudent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/139666fa-1687-49bc-b755-c57d7b8a5cc7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/139666fa-1687-49bc-b755-c57d7b8a5cc7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite/vite-project/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App/Action/StudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/Action/StudentAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App/Action/UserAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App/MessageEnum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/Message/MessageEnum.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App/mappers/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/mappers/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App/mappers/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App/pojo/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/pojo/School.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/pojo/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App/pojo/Test.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite/vite-project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vite/vite-project/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite/vite-project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vite/vite-project/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite/vite-project/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vite/vite-project/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vite/vite-project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vite/vite-project/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite/vite-project/src/assets/CommonJs/LoginOrRegisterCommonJs.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite/vite-project/src/assets/CommonJs/LoginOrRegisterCommonJs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite/vite-project/src/components/BaseLogin.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite/vite-project/src/components/Classes.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vite/vite-project/src/components/CourseUtilComponent/updateCourse.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite/vite-project/src/components/ForgetPassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vite/vite-project/src/components/ForgetPassword.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite/vite-project/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vite/vite-project/src/components/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vite/vite-project/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vite/vite-project/src/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite/vite-project/src/components/MyMessage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite/vite-project/src/components/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vite/vite-project/src/components/Register.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vite/vite-project/src/components/Top.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vite/vite-project/src/components/Top.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vite/vite-project/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite/vite-project/src/main.js" afterDir="false" />
     </list>
@@ -31,9 +76,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Enum" />
-        <option value="JavaScript File" />
+        <option value="Kotlin Interface" />
+        <option value="Class" />
         <option value="Kotlin Class" />
         <option value="Vue Composition API Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -58,7 +105,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -75,6 +122,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "JavaScript 调试.index.html.executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
     "Kotlin.TestKt.executor": "Run",
     "Node.js.LoginOrRegisterCommonJs.js.executor": "Run",
     "Node.js.main.js.executor": "Run",
@@ -89,11 +137,13 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/75901/Downloads/engineering-project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
     "settings.editor.selected.configurable": "vcs.Git",
     "ts.external.directory.path": "D:\\mycoding\\IntelliJ IDEA 2023.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true",
@@ -110,31 +160,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\mycoding\IntelliJ IDEA 2023.3.4\jbr\bin\EngineeringPractice" />
-      <recent name="D:\mycoding\IntelliJ IDEA 2023.3.4\jbr\bin\EngineeringPractice\vite\vite-project\src\assets" />
+      <recent name="D:\mycoding\IntelliJ IDEA 2023.3.4\jbr\bin\EngineeringPractice\vite\vite-project\src\assets\CommonJs\animation" />
+      <recent name="D:\mycoding\IntelliJ IDEA 2023.3.4\jbr\bin\EngineeringPractice\vite\vite-project\src\assets\CommonJs\check" />
+      <recent name="D:\mycoding\IntelliJ IDEA 2023.3.4\jbr\bin\EngineeringPractice\vite\vite-project\src\assets\CommonJs\utils" />
+      <recent name="D:\mycoding\IntelliJ IDEA 2023.3.4\jbr\bin\EngineeringPractice\vite\vite-project\src\assets\CommonJs\utils\BaseUtil" />
+      <recent name="D:\mycoding\IntelliJ IDEA 2023.3.4\jbr\bin\EngineeringPractice\vite\vite-project\src\assets\CommonJs\utils\roleUtil" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="App.Message" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App.Main" />
-      <module name="EngineeringPractice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="App.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App.pojo.TestKt" />
-      <module name="EngineeringPractice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.Starter">
     <configuration name="Starter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="EngineeringPractice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="App.Starter" />
@@ -148,11 +184,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/vite/vite-project/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Main" />
-        <item itemvalue="Kotlin.TestKt" />
         <item itemvalue="Spring Boot.Starter" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +229,44 @@
       <workItem from="1712493063221" duration="11161000" />
       <workItem from="1712538875579" duration="112000" />
       <workItem from="1712554731891" duration="26000" />
-      <workItem from="1712566849270" duration="10079000" />
+      <workItem from="1712566849270" duration="10383000" />
+      <workItem from="1712642237674" duration="3708000" />
+      <workItem from="1712660364240" duration="19000" />
+      <workItem from="1712663663478" duration="6999000" />
+      <workItem from="1712676003512" duration="2835000" />
+      <workItem from="1712715365070" duration="6238000" />
+      <workItem from="1712732950491" duration="18000" />
+      <workItem from="1712733089290" duration="9834000" />
+      <workItem from="1712755878674" duration="3338000" />
+      <workItem from="1712765029778" duration="615000" />
+      <workItem from="1712801816152" duration="3560000" />
+      <workItem from="1712815633660" duration="3269000" />
+      <workItem from="1712819690014" duration="1405000" />
+      <workItem from="1712839607627" duration="1049000" />
+      <workItem from="1712847305871" duration="1246000" />
+      <workItem from="1712899418464" duration="75000" />
+      <workItem from="1712994302784" duration="17451000" />
+      <workItem from="1713018203743" duration="154000" />
+      <workItem from="1713063815805" duration="16849000" />
+      <workItem from="1713091939426" duration="13096000" />
+      <workItem from="1713140403605" duration="5646000" />
+      <workItem from="1713154367459" duration="14896000" />
+      <workItem from="1713184750681" duration="8478000" />
+      <workItem from="1713194367301" duration="2404000" />
+      <workItem from="1713243312702" duration="2231000" />
+      <workItem from="1713246879311" duration="6294000" />
+      <workItem from="1713259509715" duration="12118000" />
+      <workItem from="1713281932038" duration="1371000" />
+      <workItem from="1713320328392" duration="5080000" />
+      <workItem from="1713337561551" duration="6000" />
+      <workItem from="1713337868188" duration="18976000" />
+      <workItem from="1713365478945" duration="2156000" />
+      <workItem from="1713415243505" duration="1615000" />
+      <workItem from="1713420009084" duration="5948000" />
+      <workItem from="1713429109144" duration="3552000" />
+      <workItem from="1713437997718" duration="9075000" />
+      <workItem from="1713449931768" duration="2238000" />
+      <workItem from="1713506988651" duration="10613000" />
     </task>
     <task id="LOCAL-00001" summary="新建文件夹">
       <option name="closed" value="true" />
@@ -218,7 +300,31 @@
       <option name="project" value="LOCAL" />
       <updated>1712402110743</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="加入了后端">
+      <option name="closed" value="true" />
+      <created>1712586406901</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712586406901</updated>
+    </task>
+    <task id="LOCAL-00006" summary="加入了后端">
+      <option name="closed" value="true" />
+      <created>1712586454210</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712586454210</updated>
+    </task>
+    <task id="LOCAL-00007" summary="加入了后端">
+      <option name="closed" value="true" />
+      <created>1712586543705</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712586543705</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +344,18 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="新建文件夹" />
-    <option name="LAST_COMMIT_MESSAGE" value="新建文件夹" />
+    <MESSAGE value="加入了后端" />
+    <MESSAGE value="完成了部分功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了部分功能" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="ch.qos.logback.classic.Logger" memberName="name" />
+        <PinnedItemInfo parentTag="org.apache.catalina.connector.RequestFacade" memberName="request" />
+        <PinnedItemInfo parentTag="com.baomidou.mybatisplus.core.override.MybatisMapperProxy" memberName="sqlSession" />
+        <PinnedItemInfo parentTag="java.lang.reflect.Method" memberName="slot" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

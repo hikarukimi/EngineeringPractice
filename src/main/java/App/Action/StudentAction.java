@@ -1,7 +1,11 @@
 package App.Action;
 
-import App.MessageEnum;
+import App.Message.MessageBuilder;
+import App.Message.MessageEnum;
+import App.Request.StudentRequest;
+import App.mappers.CourseStudentMapper;
 import App.mappers.StudentMapper;
+import App.pojo.CourseStudent;
 import App.pojo.Student;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -9,79 +13,68 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
-@CrossOrigin(origins = "http://localhost:5173/")
-@RequestMapping("student")
+@CrossOrigin(origins = "http://localhost:5173/")//允许跨域请求
+@RequestMapping("/student")
 @RestController
 public class StudentAction {
 
     @Autowired
-    private StudentMapper mapper;
+    private StudentMapper studentMapper;
+    @Autowired
+    private CourseStudentMapper courseStudentMapper;
+    /**
+     * @description 用户注册, 检查出username重复发送用户名已存在
+     */
+    @PostMapping("/register")
+    public ResponseEntity<String> register(@RequestBody Student student) {
 
-    @RequestMapping("StudentList")
-    public String StudentList()
-    {
-        ArrayList<Student> students = mapper.StudentList();
-        return JSON.toJSONString(students);
-    }
-/**
- * @param student:
- * @return ResponseEntity<Integer>
- * @author hikarukimi
- * @description 用户注册, 检查出username重复发送用户名已存在
- */
-    @PostMapping("studentRegister")
-    public ResponseEntity<MessageEnum> studentRegister(@RequestBody Student student)
-    {
-
-        List<Student> students = mapper.selectList(new LambdaQueryWrapper<Student>().eq(Student::getUsername,student.getUsername()));
-        if (students.isEmpty()){
-            mapper.insert(student);
-            return ResponseEntity.ok(MessageEnum.USER_REGISTER_SUCCESS);
-        }else{
-            return ResponseEntity.badRequest().body(MessageEnum.USERNAME_ALREADY_EXISTS);
+        List<Student> students = studentMapper.selectList(new LambdaQueryWrapper<Student>().eq(Student::getUsername, student.getUsername()));
+        if (students.isEmpty()) {
+            studentMapper.insert(student);
+            return ResponseEntity.ok(MessageEnum.USER_REGISTER_SUCCESS.toString());
+        } else {
+            return ResponseEntity.badRequest().body(JSON.toJSONString( new MessageBuilder(MessageEnum.USERNAME_ALREADY_EXISTS.toString())));
         }
     }
+
     /**
-     * @param student:
-     * @return ResponseEntity<Integer>
-     * @author hikarukimi
      * @description 用户登录
      */
-    @PostMapping("studentLogin")
-    public ResponseEntity<MessageEnum> studentLogin(@RequestBody Student student)
-    {
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody Student student) {
 
-        Student selectedStudent = mapper.selectOne(new LambdaQueryWrapper<Student>().eq(Student::getUsername, student.getUsername())
+        Student selectedStudent = studentMapper.selectOne(new LambdaQueryWrapper<Student>().eq(Student::getUsername, student.getUsername())
                 .eq(Student::getPassword, student.getPassword()));
-        if(selectedStudent==null){
-            return ResponseEntity.badRequest().body(MessageEnum.USERNAME_OR_PASSWORD_ERROR);
-        }else {
-            return ResponseEntity.ok(MessageEnum.USER_LOGIN_SUCCESS);
+        if (selectedStudent == null) {
+            return ResponseEntity.badRequest().body(MessageEnum.USERNAME_OR_PASSWORD_ERROR.toString());
+        } else {
+            return ResponseEntity.ok(JSON.toJSONString(StudentRequest.returnMessage(selectedStudent.getSid(), MessageEnum.USER_LOGIN_SUCCESS)));
         }
     }
 
-    @RequestMapping("StudentDelete")
-    public int StudentDelete(@RequestParam("sid") String sid)
-    {
-        return mapper.deleteById(sid);
+    /**
+     * @description 通过学生的sid查询学生的其他信息
+     */
+    @GetMapping("/message")
+    public ResponseEntity<String> message(@RequestParam(value = "sid") int sid) {
+        Student student = studentMapper.selectById(sid);
+        return ResponseEntity.ok(JSON.toJSONString(student));
     }
 
-//    @PostMapping("StudentEdit")
-//    public int StudentEdit(@RequestBody Student student)
-//    {
-//        LambdaUpdateWrapper<Student> lambdaUpdateWrapper=new LambdaUpdateWrapper<>();
-//        lambdaUpdateWrapper.set(Student::getName,student.getName()).set(Student::getQq,student.getQq())
-//                .set(Student::getSchoolId,student.getSchoolId()).eq(Student::getSid,student.getSid());
-//    return mapper.update(student,lambdaUpdateWrapper);
-//    }
-
-    @GetMapping("StudentInfo")
-    public String StudentInfo(@RequestParam("sid") String sid)
-    {
-        return JSON.toJSONString(mapper.StudentInfo(sid));
+    /**
+     * @description 用户选择课程
+     */
+    @PostMapping("/selectCourse")
+    public ResponseEntity<String> selectCourse(@RequestBody List<CourseStudent> courseStudentList) {
+        courseStudentList.forEach(
+                (courseStudent ->
+                    courseStudentMapper.insert(courseStudent)
+                )
+        );
+        return ResponseEntity.ok( JSON.toJSONString(new MessageBuilder(MessageEnum.SELECT_COURSE_SUCCESS.toString())));
     }
+
 }

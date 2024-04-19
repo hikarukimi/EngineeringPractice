@@ -2,6 +2,12 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/App/pojo/Course.kt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vite/vite-project/src/App.vue" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/vite/vite-project/src/assets/CommonJs/utils/CourseUtil.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vite/vite-project/src/components/CourseUtilComponent/insertCourse.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vite/vite-project/src/components/CourseUtilComponent/updateCourse.vue" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

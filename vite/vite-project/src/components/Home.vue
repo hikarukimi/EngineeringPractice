@@ -10,11 +10,12 @@
 </template>
 
 <style scoped>
-div{
+div {
   width: 100%;
-  height: 650px;
+
 }
-p{
+
+p {
   text-align: center;
 }
 

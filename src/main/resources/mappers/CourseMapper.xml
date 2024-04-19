@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="App.mappers.CourseMapper">
+
+    <select id="selectStudentCourse" resultMap="selectStudentCourse">
+        select *
+        from student
+                 left join course_student on student.sid = course_student.sid
+                 left join course on course_student.course_id = course.course_id
+        where student.sid = #{sid}
+    </select>
+    <resultMap id="selectStudentCourse" type="App.pojo.Student">
+        <id column="sid" property="sid"></id>
+        <collection property="courseList" ofType="App.pojo.Course">
+            <id column="course_id" property="courseId"></id>
+        </collection>
+    </resultMap>
+</mapper>
